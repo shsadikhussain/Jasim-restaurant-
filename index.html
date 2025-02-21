@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JH RESTAURANT</title>
+    <link rel="icon" href=".//logo.png">
+    <style>
+        *{
+            margin: 0px;
+            box-sizing: border-box;
+
+        }
+        .prnt{
+            background-color:rgb(225, 140, 30);
+            box-shadow: -1px 1px 5px ;
+            height: 60px;
+            text-align: center;
+            position: sticky;
+            top: 0px;
+        }
+        .child{
+            display: flex;
+            justify-content: flex-end;
+
+        }
+        .anc{
+            text-decoration: none;
+            padding: 10px;
+            margin: 10px;
+            text-align: center;
+            color: white;
+            border-radius: 10em;
+            font-size: 20px;
+            word-spacing: 60px;
+            margin-left: 30px;
+          }
+        .head{
+            padding: 10px;
+            color:#fff;
+            background-color:maroon;
+            /* text-align: center; */
+            letter-spacing: 7px;
+            /* position: sticky;
+            top: 0px; */
+        }
+        .div1{
+            border-radius: 10px;
+            margin: 50px;
+            margin-top: 100px;
+        }
+        .prnt1{
+            display: flex;
+            
+        }
+        .div1:hover{
+             transform: scale(1.2);
+             transition: 0.7s;
+             cursor: pointer;
+             box-shadow: 2px 2px 20px blue;
+        }
+        .anc:hover{
+            font-size: 20px;
+            transform: scale(1.2);
+            transition: 0.5s;
+            letter-spacing: 3px;
+            /* background-color:blueviolet; */
+        }
+        
+        .prnt2{
+            display: flex;
+            justify-content: space-between;
+            margin: 0px 130px 130px 130px;
+            color: rgb(135, 75, 31);
+        }
+        .para{
+            text-align: center;
+            padding: 30px;
+            font-size: 30px;
+            letter-spacing: 4px;
+            
+        }
+        .para1{
+            text-align: center;
+            padding: 30px;
+            font-size: 30px;
+            letter-spacing: 4px;
+            
+        }
+        b{
+            color: blueviolet;
+        }
+        strong{
+           color: goldenrod;
+            font-size: 50px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        i{
+            font-size: 20px;
+        }
+        .div2{
+            border-radius: 10px;
+            margin: 50px;
+            margin-top: 100px;
+            height: 550px;
+        }
+        .div2:hover{
+             transform: scale(1.0);
+             transition: 0.7s;
+             cursor: pointer;
+             box-shadow: 2px 2px 30px gold;
+             
+        }
+        .head2{
+            text-align: center;
+            font-size: 50px;
+            letter-spacing: 10px;
+            color: gold;
+        }
+        .click{
+            text-decoration: none   ;
+        }
+        .click:hover{
+            color: blueviolet;
+
+        }
+         .order{
+            margin: 200px;
+            display: flex;
+         }   
+        .price_cart1{
+            margin: 30px;
+            border-radius: 20px;
+        }
+        .head3{
+            margin: 30px;
+            background-color: orange;
+            width: 50%;
+            border-radius: 10px;
+            text-align: center;
+            color: white;
+            padding: 20px;
+            height: 60vh;
+            margin-left: 150px;
+        }
+
+        .head4{
+            font-size: 70px;
+            letter-spacing: 10px;
+            color: goldenrod;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .f1{
+            background-color: transparent;
+            border: 1px solid transparent;
+            box-shadow: 2px 2px 30px 3px rgb(202, 7, 202);
+            width: 30%;
+            height: 80vh;
+            margin-left: 5%;
+            margin-bottom: 200px;
+        }
+        
+        .head5{
+            text-align: center;
+            padding: 30px;
+            color: #fff;
+        }
+        table,tr,td{
+            border: 1px solid;
+            padding: 30px;
+            border-collapse: collapse;
+            text-align: center;
+            margin: 50px;
+            width: 75%;
+            color: #fff;
+        }
+        th{
+            letter-spacing: 3px;
+            color: blue;
+            padding: 20px;
+        }
+        button{
+            margin: 20px;
+            margin-left: 81px;
+            padding: 15px;
+            width: 300px;
+            background-color: coral;
+            border: none;
+            cursor: pointer;
+            font-size: 20px;
+            color: #fff;
+        }
+        .f{
+            background-image: url(.//grill.jpg);
+            background-size: cover;
+            height: 100vh;
+            background-position: top;
+            background-position: 100%;
+        }
+        .f2{
+            background-image: url(.//soup.jpg);
+            background-size: cover;
+            height: 100vh;
+            background-position: 100%;
+        }
+        .head6{
+            color:cadetblue;
+            text-align: center;
+            letter-spacing: 8px;
+        }
+        .srch{
+            padding: 20px;
+        }
+        input{
+            padding: 5px;
+            border-radius: 40px;
+            border: none;
+        }
+        button:hover{
+            background-color: violet;
+        }
+    </style>
+</head>
+<body>
+    <h1  class="head"><strong>JH</strong> RESTAURANT<i>(Familiy Restaurant)</i></h1>
+    <div class="prnt">
+        <div class="child">
+            <div class="srch"> <input type="search" placeholder=" Search Here"> </div>
+            <a  class="anc" href="#Home1">Home</a>
+            <a class="anc" href="#starters">Receipies</a>
+            <a class="anc" href="#">Reviews</a>
+            <a class="anc" href="#Gallery">Gallery</a>
+            <a class="anc" href="#">Contact</a>
+        </div>
+    </div>
+    <p class="para" id="Home1">SPECAILS IN <b>JH RESTAURANT</b></p>
+    <p class="para1"><u>STARTERS</u></p>
+    <div class="prnt1">
+       <img class="div1" src="tandoori piece.jpg" alt="Tandoori chicken" width="27%">
+       <img class="div1"  src=".//Fire chicken.jpg" alt="" width="27%">
+       <img class="div1"  src=".//soup.jpg" alt="" width="27%">
+    </div>
+    <div class="prnt2">
+        <a class="click" href="#Tan"><h1>Chicken Tandoori &#8678;</h1></a>
+        <a class="click" href="#bbq"><h1>BBQ &#8678;</h1></a>
+        <a class="click" href="#soup" target="_blank"><h1>Mutton Soup &#8678;</h1></a>
+    </div>
+    <div class="prnt1">
+        <img class="div1"  src=".//grill.jpg" alt="Tandoori chicken" width="27%">
+        <img class="div1"  src=".//Noodles.jpg" alt="" width="27%">
+        <img class="div1"  src=".//tandoori.jpg" alt="" width="27%">
+     </div>
+     <div class="prnt2">
+        <a class="click" href="#kab"><h1>Chicken Kabab &#8678;</h1></a>
+        <a class="click" href="#Nood"><h1>Chinese Noddles &#8678;</h1></a>
+        <a class="click" href="#F Tan"><h1>Full Tandoori &#8678;</h1></a>
+     </div> 
+     <h1 class="head2" id="Gallery">Gallery</h1>
+     <div class="prnt1">
+        <img class="div2" src=".//Gallery1.jpg" alt="Tandoori chicken" width="27%">
+        <img class="div2" src=".//Gallery2.jpg" alt="" width="27%">
+        <img class="div2" src=".//Gallery3.jpg" alt="" width="27%">
+     </div>
+     <div class="prnt1">
+        <img class="div2" src=".//Gallery4.jpg" alt="Tandoori chicken" width="27%">
+        <img class="div2" src=".//Gallery5.jpg" alt="" width="27%">
+        <img class="div2" src=".//Gallery6.jpg" alt="" width="27%">
+     </div>
+     <div class="prnt1">
+        <img class="div2" src=".//Gallery7.jpg" alt="Tandoori chicken" width="27%">
+        <img class="div2"  src=".//Gallery8.jpg" alt="" width="27%">
+        <img class="div2" src=".//Gallery9.jpg" alt="" width="27%">
+     </div>
+     <h1 class="head4" id="starters">STARTERS</h1>
+        
+            <div class="f">
+                <div class="f1"><br>
+                   <h1 class="head5" >Chicken Kabab</h1>
+                   <hr>
+                   <table>
+                       <tr>
+                         <th>Chicken Kabab</th>
+                         <th>$Price</th>
+                       </tr>
+                       <tr>
+                         <td>Full</td>
+                         <td>800/-</td>
+                       </tr>
+                       <tr>
+                        <td>Half</td>
+                        <td >400/-</td>
+                      </tr>
+                   </table>
+                   <button>Order Here</button>
+                   <h1 class="head6">THANK YOU</h1>
+                 </div>
+            </div>     
+            <div class="f2">
+                <div class="f1"><br>
+                   <h1 class="head5" >Mutton Soup</h1>
+                   <hr>
+                   <table>
+                       <tr>
+                         <th>Mutton Soup</th>
+                         <th>$Price</th>
+                       </tr>
+                       <tr>
+                         <td>Small</td>
+                         <td>200/-</td>
+                       </tr>
+                       <tr>
+                        <td>Large</td>
+                        <td >300/-</td>
+                      </tr>
+                   </table>
+                   <button>Order Here</button>
+                   <h1 class="head6">THANK YOU</h1>
+                 </div>
+            </div>     
+            <div class="f">
+                <div class="f1"><br>
+                   <h1 class="head5" >BBQ</h1>
+                   <hr>
+                   <table>
+                       <tr>
+                         <th>BBQ</th>   
+                         <th>$Price</th>
+                       </tr>
+                       <tr>
+                         <td>Full</td>
+                         <td>800/-</td>
+                       </tr>
+                       <tr>
+                        <td>Half</td>
+                        <td >400/-</td>
+                      </tr>
+                   </table>
+                   <button>Order Here</button>
+                   <h1 class="head6">THANK YOU</h1>
+                 </div>
+            </div>     
+            <div class="f">
+                <div class="f1"><br>
+                   <h1 class="head5" >Chicken Tandoori</h1>
+                   <hr>
+                   <table>
+                       <tr>
+                         <th>Chicken Tandoori</th>
+                         <th>$Price</th>
+                       </tr>
+                       <tr>
+                         <td>Full</td>
+                         <td>700/-</td>
+                       </tr>
+                       <tr>
+                        <td>Half</td>
+                        <td >350/-</td>
+                      </tr>
+                   </table>
+                   <button>Order Here</button>
+                   <h1 class="head6">THANK YOU</h1>
+                 </div>
+            </div>     
+            <div class="f">
+                <div class="f1"><br>
+                   <h1 class="head5" >Chicken Tandoori</h1>
+                   <hr>
+                   <table>
+                       <tr>
+                         <th>Chicken Noodles</th>
+                         <th>$Price</th>
+                       </tr>
+                       <tr>
+                         <td>Full</td>
+                         <td>230/-</td>
+                       </tr>
+                       <tr>
+                        <td>Mini</td>
+                        <td >130/-</td>
+                      </tr>
+                   </table>
+                   <button>Order Here</button>
+                   <h1 class="head6">THANK YOU</h1>
+                 </div>
+                 <div class="f">
+                    <div class="f1"><br>
+                       <h1 class="head5" >Chicken Tandoori</h1>
+                       <hr>
+                       <table>
+                           <tr>
+                             <th>Full Tandoori</th>
+                             <th>$Price</th>
+                           </tr>
+                           <tr>
+                             <td>Full</td>
+                             <td>800/-</td>
+                           </tr>
+                           <tr>
+                            <td>Half</td>
+                            <td >450/-</td>
+                          </tr>
+                       </table>
+                       <button>Order Here</button>
+                       <h1 class="head6">THANK YOU</h1>
+                     </div>
+</body>         
+</html>
